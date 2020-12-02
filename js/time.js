@@ -35,6 +35,7 @@ const twitterDescription = document.querySelector('meta[name=\'twitter:descripti
 
 const ogTitle = document.querySelector('meta[property=\'og:title\']');
 const twitterTitle = document.querySelector('meta[name=\'twitter:title\']');
+const htmlTitle = document.querySelector('title');
 
 const ogImage = document.querySelector('meta[property=\'og:image\']');
 const twitterImage = document.querySelector('meta[name=\'twitter:image\']');
@@ -47,9 +48,9 @@ metaDescription.setAttribute('content', timeTextOnElsewhere);
 ogDescription.setAttribute('content', timeTextOnElsewhere);
 twitterDescription.setAttribute('content', timeTextOnElsewhere);
 
-
 ogTitle.setAttribute('content', title);
 twitterTitle.setAttribute('content', title);
+htmlTitle.setAttribute('content', title);
 
 ogImage.setAttribute('content', image);
 twitterImage.setAttribute('content', image);

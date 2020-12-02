@@ -50,7 +50,7 @@ twitterDescription.setAttribute('content', timeTextOnElsewhere);
 
 ogTitle.setAttribute('content', title);
 twitterTitle.setAttribute('content', title);
-htmlTitle.setAttribute('content', title);
+htmlTitle.innerText = title;
 
 ogImage.setAttribute('content', image);
 twitterImage.setAttribute('content', image);

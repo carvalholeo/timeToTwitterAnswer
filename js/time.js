@@ -16,12 +16,12 @@ const duration = i.toDuration(['days', 'months', 'minutes', 'hours']).toObject()
 document.querySelector('#first_time').innerText = initialDate.setLocale('en').toLocaleString(DateTime.DATETIME_FULL);
 
 const actualTime = document.querySelector('#actual_time');
-const timeTextOnHTML = `${duration.days} days, ${duration.hours} hours, and ${Math.floor(duration.minutes.toFixed(0))} minutes!`;
+const timeTextOnHTML = `${duration.days} days, ${duration.hours} hours, and ${Math.floor(duration.minutes.toFixed(0))} minutes`;
 
-actualTime.innerText = timeTextOnHTML;
+actualTime.innerText = `${timeTextOnHTML}!`;
 
 const timeTextOnElsewhere = `Twitter has taking ${timeTextOnHTML} to answer my fisrt support ask!!!`;
-const title = 'Time to Twitter answer';
+const title = 'Time to Twitter answer me';
 const url = 'https://twitter.leocarvalho.dev';
 const image = 'http://leocarvalho.dev/storage/images/perfil.webp';
 

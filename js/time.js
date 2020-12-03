@@ -9,7 +9,7 @@ const initialDate = DateTime.fromObject({
   zone: 'America/Sao_Paulo',
   locale: 'pt_BR'
 });
-const endDate = DateTime.local();
+const endDate = DateTime.local().setZone('America/Sao_Paulo');
 const i = initialDate.until(endDate);
 const duration = i.toDuration(['days', 'months', 'minutes', 'hours']).toObject();
 

@@ -23,7 +23,7 @@ actualTime.innerText = `${timeTextOnHTML}!`;
 const timeTextOnElsewhere = `Twitter has taking ${timeTextOnHTML} to answer my fisrt support ask!!!`;
 const title = 'Time to Twitter answer me';
 const url = 'https://twitter.leocarvalho.dev';
-const image = 'http://leocarvalho.dev/storage/images/perfil.webp';
+const image = 'https://leocarvalho.dev/images/leo.jpg';
 
 const linkCanonical = document.querySelector('link[rel=canonical]');
 const ogURL = document.querySelector('meta[property=\'og:url\']');

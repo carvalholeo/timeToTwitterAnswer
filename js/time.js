@@ -16,7 +16,7 @@ const duration = i.toDuration(['days', 'months', 'minutes', 'hours']).toObject()
 document.querySelector('#first_time').innerText = initialDate.setLocale('en').toLocaleString(DateTime.DATETIME_FULL);
 
 const actualTime = document.querySelector('#actual_time');
-const timeTextOnHTML = `${duration.months} month, ${duration.days} days, ${duration.hours} hours, and ${Math.floor(duration.minutes.toFixed(0))} minutes`;
+const timeTextOnHTML = `${duration.months} months, ${duration.days} days, ${duration.hours} hours, and ${Math.floor(duration.minutes.toFixed(0))} minutes`;
 
 actualTime.innerText = `${timeTextOnHTML}!`;
 

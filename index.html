@@ -76,6 +76,17 @@
 
   <script src="js/luxon.js"></script>
   <script src="js/time.js"></script>
-  <script async src="https://analytics.leocarvalho.dev/tracker.js" data-ackee-server="https://analytics.leocarvalho.dev" data-ackee-domain-id="c824b149-3d56-4e90-ace1-2351b8948574"></script>
+  <script src="https://analytics.leocarvalho.dev/tracker.js"></script>
+  <script defer>
+    const instance = ackeeTracker.create('https://analytics.leocarvalho.dev', {
+      detailed: true,
+      ignoreLocalhost: true
+    });
+    const attributes = ackeeTracker.attributes(true)
+    instance.record('c824b149-3d56-4e90-ace1-2351b8948574', {
+      siteLocation: window.location.href,
+      siteReferrer: document.referrer
+    })
+  </script>
 </body>
 </html>
